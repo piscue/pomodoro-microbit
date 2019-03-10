@@ -150,7 +150,13 @@ def imageNumber(number):
 # press button once start the time countdown from 25 minutes
 def startTimer(time):
     status = "running"
-    display.scroll("Start")
+    display.scroll("3 2 1 GO")
+    for i in range(0,time):
+        time = time - 1
+        display.show(imageNumber(time))
+        sleep(500)
+    display.show(Image.HAPPY)
+    status = "paused"
     return status
 
 
@@ -164,10 +170,7 @@ def pauseTime():
 # press button again will reset the time
 def resetTimer(time):
     status = "reset"
-    for i in range(0,25):
-        display.show(imageNumber(time))
-        time = time - 1
-        sleep(500)
+    display.show(imageNumber(time))
     return status
 
 
