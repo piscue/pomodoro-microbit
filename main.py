@@ -9,6 +9,7 @@ pomodoroSlot = 25
 
 global status
 
+
 def imageNumber(number):
     return {
         25: Image("77777:"
@@ -147,11 +148,12 @@ def imageNumber(number):
                   "09090"
                   "90009")
 
+
 # press button once start the time countdown from 25 minutes
 def startTimer(time):
     status = "running"
     display.scroll("3 2 1 GO")
-    for i in range(0,time):
+    for i in range(0, time):
         time = time - 1
         display.show(imageNumber(time))
         sleep(500)
