@@ -1,2 +1,2 @@
 -i https://pypi.python.org/simple
-microbit-dummy==*
+microbit-dummy==0.0.1
