@@ -172,9 +172,9 @@ def flashing():
     for x in range(0, 5):
         for y in range(0, 5):
             if display.get_pixel(x, y) == 7:
-                display.set_pixel(x, y, 9)
+                display.set_pixel(x, y, 5)
             else:
-                if display.get_pixel(x, y) == 9:
+                if display.get_pixel(x, y) == 5:
                     display.set_pixel(x, y, 7)
 
 
