@@ -208,6 +208,5 @@ while True:
             flashing()
             sleep(1000)
         else:
-            print(actualTime)
             display.show(Image.HAPPY)
-            status = "paused"
+            status = "paused", pomodoroSlot
