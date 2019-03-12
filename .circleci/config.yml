@@ -44,7 +44,7 @@ jobs:
           name: run linting and metrics
           command: |
             . venv/bin/activate
-            flake8 ./ tests --output-file test-reports
+            flake8 ./ tests --exit-zero --output-file test-reports
 
       - store_artifacts:
           path: test-reports
